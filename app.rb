@@ -22,7 +22,7 @@ class App < Sinatra::Base
     end
 
     def capitalize_all(string)
-        string.split(" ").each{|word| word.capitalize!}.join(" ")
+        string.split(" ").map{|word| word.capitalize}.join(" ")
     end
 
 
